@@ -200,12 +200,13 @@ def big_shoe_rebounds
       if shoe_size[name] > size
         show_size[name] = size
         player = name
+        
       end
     end
   end 
   game_hash.each do |wich2, descriptions2|
     descriptions[:players].each do |name2, details2|
-      
+      binding.pry
       if name2 == player
         return details[:rebounds]
       end
